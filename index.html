@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROD Stokrotka</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Lora', serif; background: #f4f4f4; margin: 0; color: #333; scroll-behavior: smooth; }
+    header { background: linear-gradient(to right, #8BC34A, #558B2F); color: white; padding: 2rem 1rem; text-align: center; animation: fadeInDown 1s ease-out; }
+    @keyframes fadeInDown { from { opacity: 0; transform: translateY(-50px); } to { opacity: 1; transform: translateY(0); } }
+    nav ul { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; padding: 0; margin: 1rem 0 0 0; }
+    nav li { margin: 0.5rem 1rem; }
+    nav a { color: white; text-decoration: none; font-weight: bold; position: relative; }
+    nav a::after { content: ''; position: absolute; width: 100%; transform: scaleX(0); height: 2px; bottom: -2px; left: 0; background-color: white; transform-origin: bottom right; transition: transform 0.3s ease-out; }
+    nav a:hover::after { transform: scaleX(1); transform-origin: bottom left; }
+    section { padding: 2.5rem 2rem; background: white; margin: 2rem auto; max-width: 1000px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); border-radius: 10px; }
+    footer { text-align: center; padding: 1rem; background: #c8e6c9; font-size: 0.9rem; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1 data-aos="zoom-in">ROD Stokrotka</h1>
+      <p data-aos="fade-up" data-aos-delay="200">Twój ogród spokoju w miejskiej dżungli</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Strona Główna</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="historia.html">Historia</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section data-aos="fade-up">
+    <h2>Witaj na stronie ROD Stokrotka</h2>
+    <p>Nasze ogrody działkowe w Bolesławcu to zielone serce miasta, miejsce relaksu i wspólnoty.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 ROD Stokrotka – Wszystkie prawa zastrzeżone
+  </footer>
+
+  <script> AOS.init(); </script>
+</body>
+</html>
